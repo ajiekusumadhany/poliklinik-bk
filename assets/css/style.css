@@ -1,0 +1,240 @@
+body {
+  margin: 0;
+  font-size: 16px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+nav {
+  z-index: 9999;
+  left: 20px;
+  right: 20px;
+  top: 10px;
+  padding: 10px 20px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 15px;
+  backdrop-filter: blur(15px) saturate(180%);
+  box-shadow: 0 8px 32px rgba(31, 38, 135, 0.233);
+  border: 1px solid rgba(255, 255, 255, 0.315);
+  max-width: 1400px;
+  margin: auto;
+}
+main {
+  max-width: 1400px;
+  margin: auto;
+  box-sizing: border-box;
+}
+.judul-page {
+  margin-top: 100px;
+  padding: 0 10px;
+}
+.container-lp {
+  height: 100vh;
+}
+.container-lp .container-left h2 {
+  font-size: 2.8em;
+  font-weight: bold;
+}
+.container-lp .container-left p {
+  font-size: 1.125em;
+}
+.container-lp .container-left .btn-login {
+  font-size: 1em;
+  width: auto;
+  max-width: 200px;
+}
+.container-lp .container-right img {
+  border-radius: 15px;
+  backdrop-filter: blur(15px) saturate(180%);
+  box-shadow: 0 8px 32px rgba(31, 38, 135, 0.233);
+}
+
+.img-about-container {
+  width: 200px;
+  height: 200px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1), 0 3px 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+a {
+  text-decoration: none;
+}
+.login-container,
+.register-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+
+}
+
+.login-box,
+.register-box {
+  background: rgba(255, 255, 255, 0.384);
+  backdrop-filter: blur(2px);
+  border-radius: 10px;
+  padding: 30px 20px 30px 20px;
+  width: 300px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+  margin-top: 100px;
+}
+
+.login-box h2,
+.register-box h2 {
+  color: #152636;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.login-box .input-group,
+.register-box .input-group {
+  margin-bottom: 15px;
+}
+.login-box .input-group input,
+.register-box .input-group input {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-bottom: 2px solid #152636;
+  border-radius: 0;
+  background: rgba(255, 255, 255, 0);
+  font-size: 14px;
+}
+
+.login-box .input-group input::placeholder,
+.register-box .input-group input::placeholder {
+  color: #152636;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.login-box .input-group input:focus,
+.register-box .input-group input:focus {
+  outline: none;
+  border-bottom: 2px solid #152636;
+  color: #000;
+}
+
+.login-box .login-btn,
+.register-box .register-btn {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.login-box .register,
+.register-box .login {
+  text-align: center;
+  margin-top: 16px;
+  color: rgb(0, 0, 0);
+  font-size: 14px;
+}
+
+.login-box .register a,
+.register-box .login a {
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.login-box .password-container,
+.login-box .username-container,
+.register-box .password-container,
+.register-box .username-container {
+  position: relative;
+  width: 100%;
+}
+
+.login-box .password-container input,
+.login-box .username-container input,
+.register-box .password-container input,
+.register-box .username-container input {
+  padding-right: 30px;
+}
+
+.login-box .icon-username,
+#togglePassword,
+.register-box .icon-username,
+#toggleKonfirmasiPassword {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+.login-box input[type="checkbox"]:checked,
+.register-box input[type="checkbox"]:checked {
+  accent-color: #4f9bec;
+}
+
+.container-dokter,
+.container-pasien,
+.container-periksa {
+  margin-top: 40px;
+}
+.swal2-select {
+  width: 60% !important;
+  max-width: 60% !important;
+  box-sizing: border-box !important;
+  margin: 0.5em 0 !important;
+}
+
+.pagination {
+  margin: 5px 0;
+  gap: 5px;
+}
+
+.pagination .page-item {
+  margin: 0 2px;
+}
+
+.pagination .page-link {
+  color: #007bff;
+  background-color: #fff;
+  border: 1px solid #dee2e6;
+  padding: 8px 16px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.pagination .page-item.active .page-link {
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.pagination .page-item.disabled .page-link {
+  color: #6c757d;
+  pointer-events: none;
+  background-color: #fff;
+  border-color: #dee2e6;
+}
+
+footer,
+.copyright {
+  background-color: #202c3c;  
+}
+.pembatas-footer {
+  border: none;
+  height: 0.3px;
+  color: #333;
+  background-color: #333;
+}
+.card {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  cursor: cell;
+}
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 123, 255, 0.2);
+}
+@media only screen and (max-width: 600px) {
+  .container-lp {
+    margin-top: 120px;
+  }
+  .pagination .page-link {
+    padding: 6px 12px;
+    font-size: 14px;
+  }
+}
